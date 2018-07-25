@@ -42,6 +42,10 @@ function setupdebianvm {
   sudo apt-get install virtualbox-guest-dkms virtualbox-guest-x11 linux-headers-$(uname -r)
 }
 
+function setupdebianvmware {
+  sudo apt-get install open-vm-tools
+}
+
 function setupatom {
   wget https://atom.io/download/deb -O atom.deb
   sudo dpkg -i atom.deb
@@ -85,6 +89,17 @@ select yn in "Yes" "No"; do
         No ) break;;
     esac
 done
+
+
+# Ask to setup Debian VM settings
+echo "Are you on a Debian VMWare VM and want to install guest additions?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) setupdebianvmware; break;;
+        No ) break;;
+    esac
+done
+
 
 # Ask to setup Atom Editor
 echo "Are you on a Debian VM and want to install Atom?"
