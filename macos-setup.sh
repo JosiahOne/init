@@ -7,3 +7,4 @@ brew upgrade;
 # Assume homebrew is installed (FIXME)
 brew install conan;
 brew install neofetch;
+brew install googler;
