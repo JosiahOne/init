@@ -44,6 +44,7 @@ function setupdebianvm {
 
 function setupdebianvmware {
   sudo apt-get install open-vm-tools
+  sudo apt-get install open-vm-tools-desktop
 }
 
 function setupatom {
