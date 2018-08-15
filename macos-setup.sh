@@ -8,3 +8,22 @@ brew upgrade;
 brew install conan;
 brew install neofetch;
 brew install googler;
+
+# Install Node / NPM
+# TODO
+
+# Install nativefier (assumes NPM is available)
+npm update;
+npm install nativefier -g;
+
+# Install web apps using nativefier (which uses Electron).
+# Remember, vulnerabilities are found in Electron with regularity.
+# Therefore, we repackage these apps each time to bump versions as
+# appropiate.
+
+# FB Messenger
+nativefier --name "Messenger" messenger.com;
+cd Messenger*;
+cp -r Messenger.app/ /Applications/Messenger.app/;
+cd ..;
+rm -rf Messenger-darwin-x64/;
