@@ -54,6 +54,16 @@ function setupatom {
   sudo apt-get install -f 
 }
 
+
+##############################################################################
+#
+#
+#                                   STARTUP
+#
+#
+##############################################################################
+
+
 # System updates
 sudo apt-get update;
 sudo apt-get upgrade;
@@ -64,6 +74,10 @@ sudo apt-get --yes install git vim curl unzip;
 
 # Install vim configuration
 curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
+
+# Install bat (a cat clone)
+wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
+sudo dpkg -i bat_0.6.1_amd64.deb
 
 # Ask to setup mozilla dev environment
 echo "Do you wish to setup your Mozilla dev environment?"
