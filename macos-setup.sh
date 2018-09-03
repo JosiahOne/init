@@ -8,6 +8,7 @@ brew upgrade;
 brew install conan;
 brew install neofetch;
 brew install googler;
+brew install bat;
 
 # Install Node / NPM
 # TODO
