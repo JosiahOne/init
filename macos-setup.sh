@@ -10,6 +10,7 @@ brew install neofetch;
 brew install googler;
 brew install bat;
 brew install fd;
+brew install git-secrets;
 
 # Install Node / NPM
 # TODO
