@@ -30,3 +30,11 @@ cd Messenger*;
 cp -r Messenger.app/ /Applications/Messenger.app/;
 cd ..;
 rm -rf Messenger-darwin-x64/;
+
+# Google Messages
+nativefier --name "Google Messages" messages.android.com;
+cd Google\ Messages-darwin-x64/;
+cp -r Google\ Messages.app/ /Applications/Google\ Messages.app/
+cd ..;
+rm -rf Google\ Messages-darwin-x64/;
+
