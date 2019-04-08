@@ -54,6 +54,9 @@ function setupatom {
   sudo apt-get install -f 
 }
 
+function setupgit {
+  git config --global credential.helper "cache --timeout 7200"
+}
 
 ##############################################################################
 #
@@ -127,6 +130,15 @@ echo "Are you on a Debian VM and want to install Atom?"
 select yn in "Yes" "No"; do
     case $yn in
         Yes ) setupatom; break;;
+        No ) break;;
+    esac
+done
+
+# Git setup
+echo "Do you want to configure your git client (e.g. to cache passwords)?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) setupgit; break;;
         No ) break;;
     esac
 done
