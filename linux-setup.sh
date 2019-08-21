@@ -58,6 +58,10 @@ function setupgit {
   git config --global credential.helper "cache --timeout 7200"
 }
 
+function cleanup {
+  rm *.deb
+}
+
 ##############################################################################
 #
 #
@@ -81,13 +85,10 @@ curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
 # Install bat (a cat clone)
 wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
 sudo dpkg -i bat_0.6.1_amd64.deb
-rm bat_0.6.1_amd64.deb
 
 # Install fd (find replacement)
 wget https://github.com/sharkdp/fd/releases/download/v7.1.0/fd_7.1.0_amd64.deb
 sudo dpkg -i fd_7.1.0_amd64.deb
-rm fd_7.1.0_amd64.deb
-
 
 # Ask to setup mozilla dev environment
 echo "Do you wish to setup your Mozilla dev environment?"
@@ -144,5 +145,7 @@ select yn in "Yes" "No"; do
         No ) break;;
     esac
 done
+
+cleanup
 
 echo "Setup Complete"
