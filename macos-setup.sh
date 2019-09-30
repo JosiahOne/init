@@ -1,4 +1,7 @@
-# Setups environment for macOS. Assumes 10.13 (High Sierra)
+# Setups environment for macOS. Assumes 10.14 (Mojave)
+
+# Sometimes necessary
+sudo xcodebuild -license accept
 
 # System Updates
 brew update;
@@ -11,6 +14,7 @@ brew install googler;
 brew install bat;
 brew install fd;
 brew install git-secrets;
+brew install thefuck
 
 # Install Node / NPM
 # TODO
