@@ -90,6 +90,10 @@ sudo dpkg -i bat_0.6.1_amd64.deb
 wget https://github.com/sharkdp/fd/releases/download/v7.1.0/fd_7.1.0_amd64.deb
 sudo dpkg -i fd_7.1.0_amd64.deb
 
+# Install python3 and thefuck
+sudo apt-get --yes install python3
+sudo python3 -m pip install thefuck
+
 # Ask to setup mozilla dev environment
 echo "Do you wish to setup your Mozilla dev environment?"
 select yn in "Yes" "No"; do
@@ -109,7 +113,7 @@ select yn in "Yes" "No"; do
 done
 
 # Ask to setup Debian VM settings
-echo "Are you on a Debian VirtualBox VM and want to install guest additions?"
+echo "Are you on a Debian 9 VirtualBox VM and want to install guest additions?"
 select yn in "Yes" "No"; do
     case $yn in
         Yes ) setupdebianvm; break;;
