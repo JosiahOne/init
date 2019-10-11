@@ -23,6 +23,11 @@ brew install thefuck
 npm update;
 npm install nativefier -g;
 
+# Setup shell (assuming zsh)
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Install web apps using nativefier (which uses Electron).
 # Remember, vulnerabilities are found in Electron with regularity.
 # Therefore, we repackage these apps each time to bump versions as
