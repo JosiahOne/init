@@ -19,6 +19,10 @@ brew install thefuck
 # Install Node / NPM
 # TODO
 
+# Setup vim
+cp .vimrc ~/.vimrc
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
+
 # Install nativefier (assumes NPM is available)
 npm update;
 npm install nativefier -g;
