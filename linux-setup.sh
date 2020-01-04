@@ -81,6 +81,7 @@ sudo apt-get --yes install git vim curl unzip;
 
 # Install vim configuration
 curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
 
 # Install bat (a cat clone)
 wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
