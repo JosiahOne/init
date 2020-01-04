@@ -20,7 +20,7 @@ brew install thefuck
 # TODO
 
 # Setup vim
-cp .vimrc ~/.vimrc
+curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
 git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/pack/typescript/start/typescript-vim
 
 # Install nativefier (assumes NPM is available)
