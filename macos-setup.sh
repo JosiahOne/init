@@ -37,14 +37,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # Therefore, we repackage these apps each time to bump versions as
 # appropiate.
 
-# FB Messenger
-rm -rf /Applications/Messenger.app/;
-nativefier --name "Messenger" messenger.com;
-cd Messenger*;
-cp -r Messenger.app/ /Applications/Messenger.app/;
-cd ..;
-rm -rf Messenger-darwin-x64/;
-
 # Google Messages
 rm -rf /Applications/Google\ Messages.app/;
 nativefier --name "Google Messages" messages.google.com/web;
