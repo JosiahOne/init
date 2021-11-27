@@ -17,7 +17,8 @@ brew install git-secrets;
 brew install thefuck
 
 # Install Node / NPM
-# TODO
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install node
 
 # Setup vim
 curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
