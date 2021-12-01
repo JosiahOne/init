@@ -1,0 +1,59 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+  "_id": "language-jsx@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-w33HWdfW/gkm6hnqG2uMG4YQ5yn2AWEYJQ7IVtwpSXwIXFiYoDEjQlQSLG9pf31dKJ2ww96oiCpe/BUfAp2CVg==",
+  "_location": "/language-jsx",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+  "_shasum": "b97d88c54cfbb92573ace6765bb1da4727ef020d",
+  "_spec": "https://www.atom.io/api/packages/language-jsx/versions/0.1.1/tarball",
+  "_where": "/private/var/folders/gn/3frg63912_vb5bb7l48w25300000gn/T/apm-install-dir-2021910-42383-13ezo5x.rgzug",
+  "activationCommands": {
+    "atom-workspace": [
+      "jsx:run"
+    ]
+  },
+  "author": {
+    "name": "Ryan Wilson",
+    "email": "syndicated.life@gmail.com",
+    "url": "http://syndicatedlife.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/Icehunter/language-jsx/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jsx": "^0.9.89"
+  },
+  "deprecated": false,
+  "description": "Forked from original creator.",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/Icehunter/language-jsx",
+  "license": "MIT",
+  "main": "lib/jsx",
+  "name": "language-jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Icehunter/language-jsx.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.1"
+}

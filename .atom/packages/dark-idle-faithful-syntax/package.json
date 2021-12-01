@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+  "_id": "dark-idle-faithful-syntax@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lVNwH1AcB00QoBzdyaz79oUQVGSPY5HC49USzbaRlLJgS1JZdF8fQk2mKTF1GT9tVRNH9Hf+BvyCUGKcU1voOw==",
+  "_location": "/dark-idle-faithful-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+  "_shasum": "ef643ff2528313e835a289ef40b8d5645ff710d1",
+  "_spec": "https://www.atom.io/api/packages/dark-idle-faithful-syntax/versions/0.4.0/tarball",
+  "_where": "/private/var/folders/gn/3frg63912_vb5bb7l48w25300000gn/T/apm-install-dir-2020823-25399-5gk0gj.ofc3r",
+  "author": {
+    "name": "davis216"
+  },
+  "bugs": {
+    "url": "https://github.com/davis216/dark-idle-faithful-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "An Atom theme for those who liked python's dark IDLE colors",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/davis216/dark-idle-faithful-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "dark-idle-faithful-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davis216/dark-idle-faithful-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.4.0"
+}

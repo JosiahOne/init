@@ -1,0 +1,31 @@
+"*":
+  "atom-ide-code-format":
+    formatOnSave: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnType: false
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dark-idle-faithful-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "6fb2ec82-4a96-5185-79ab-1fe700bb7b21"
+  "ide-rust": {}
+  "linter-ui-default":
+    panelHeight: 241
+    showPanel: true
+  "terminal-plus":
+    core: {}
+    style: {}
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+".rust.source":
+  editor:
+    tabLength: 4
