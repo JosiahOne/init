@@ -1,6 +1,0 @@
-{
-  "atom-workspace": {
-    "alt-shift-h": "hex-view:encode",
-    "alt-shift-d": "hex-view:decode"
-  }
-}
