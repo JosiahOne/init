@@ -1,4 +1,4 @@
-# Setups environment for macOS. Assumes 10.14 (Mojave)
+# Setups environment for macOS. Assumes 12.1 (Big Sur)
 
 # Sometimes necessary
 sudo xcodebuild -license accept
@@ -17,7 +17,8 @@ brew install git-secrets;
 brew install thefuck
 
 # Install Node / NPM
-# TODO
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install node
 
 # Setup vim
 curl https://raw.githubusercontent.com/JosiahOne/vimrc/master/.vimrc > ~/.vimrc
@@ -39,16 +40,16 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 # Google Messages
 rm -rf /Applications/Google\ Messages.app/;
-nativefier --name "Google Messages" messages.google.com/web;
-cd Google\ Messages-darwin-x64/;
+nativefier --name "Google Messages" https://messages.google.com/web;
+cd Google\ Messages-darwin-*/;
 cp -r Google\ Messages.app/ /Applications/Google\ Messages.app/
 cd ..;
-rm -rf Google\ Messages-darwin-x64/;
+rm -rf Google\ Messages-darwin-*/;
 
-# Google Calendar
-rm -rf /Applications/Google\ Calendar.app/; 
-nativefier --name "Google Calendar" calendar.google.com;
-cd Google\ Calendar-darwin-x64/;
-cp -r Google\ Calendar.app/ /Applications/Google\ Calendar.app/
+# Google Chat
+rm -rf /Applications/Google\ Chat.app/;
+nativefier --name "Google Chat" https://chat.google.com;
+cd Google\ Chat-darwin-*/;
+cp -r Google\ Chat.app/ /Applications/Google\ Chat.app/
 cd ..;
-rm -rf Google\ Calendar-darwin-x64/;
+rm -rf Google\ Chat-darwin-*/;
