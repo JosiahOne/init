@@ -54,7 +54,7 @@ rm -rf Google\ Messages-darwin-*/;
 
 # Google Chat
 rm -rf /Applications/Google\ Chat.app/;
-nativefier --name "Google Chat" https://chat.google.com;
+nativefier --single-instance --honest --name "Google Chat" https://mail.google.com/chat/u/0/;
 cd Google\ Chat-darwin-*/;
 cp -r Google\ Chat.app/ /Applications/Google\ Chat.app/
 cd ..;
