@@ -39,6 +39,10 @@ npm install nativefier -g;
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Install Zsh theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+omz theme set powerlevel10k/powerlevel10k
+
 # Install web apps using nativefier (which uses Electron).
 # Remember, vulnerabilities are found in Electron with regularity.
 # Therefore, we repackage these apps each time to bump versions as
